@@ -35,6 +35,8 @@ adb pull /system/etc/HP_Audio.csv ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/etc/HP_Video.csv ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/etc/pvasflocal.cfg ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/etc/SPK_Combination.csv ../../../vendor/htc/$DEVICE/proprietary
+adb pull /system/etc/spn-conf.xml ../../../vendor/htc/$DEVICE/proprietary
+adb pull /system/etc/voicemail-conf.xml ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/etc/vpimg ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/lib/egl/libEGL_adreno200.so ../../../vendor/htc/$DEVICE/proprietary
 adb pull /system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/htc/$DEVICE/proprietary
@@ -98,6 +100,8 @@ PRODUCT_COPY_FILES += \\
     vendor/htc/__DEVICE__/proprietary/HP_Video.csv:/system/etc/HP_Video.csv \\
     vendor/htc/__DEVICE__/proprietary/pvasflocal.cfg:/system/etc/pvasflocal.cfg \\
     vendor/htc/__DEVICE__/proprietary/SPK_Combination.csv:/system/etc/SPK_Combination.csv \\
+    vendor/htc/__DEVICE__/proprietary/spn-conf.xml:/system/etc/spn-conf.xml \\
+    vendor/htc/__DEVICE__/proprietary/voicemail-conf.xml:/system/etc/voicemail-conf.xml \\
     vendor/htc/__DEVICE__/proprietary/vpimg:/system/etc/vpimg \\
     vendor/htc/__DEVICE__/proprietary/akmd:/system/bin/akmd \\
     vendor/htc/__DEVICE__/proprietary/bma150_usr:/system/bin/bma150_usr \\
