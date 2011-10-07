@@ -118,6 +118,8 @@ PRODUCT_COPY_FILES += \
 
 # Additional NAM Audio DSP Profiles to NAM Package
 PRODUCT_COPY_FILES += \
+    device/htc/ace/nam/default.acdb:system/etc/nam/default.acdb \
+    device/htc/ace/nam/default_org.acdb:system/etc/nam/default_org.acdb \
     device/htc/ace/nam/AdieHWCodec.csv:system/etc/nam/AdieHWCodec.csv \
     device/htc/ace/nam/AIC3254_REG_DualMic_MCLK.csv:system/etc/nam/AIC3254_REG_DualMic_MCLK.csv \
     device/htc/ace/nam/CodecDSPID_MCLK.txt:system/etc/nam/CodecDSPID_MCLK.txt \
