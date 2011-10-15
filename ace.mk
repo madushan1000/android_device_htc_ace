@@ -50,7 +50,6 @@ PRODUCT_COPY_FILES += \
 
 # gsm config xml file
 PRODUCT_COPY_FILES += \
-    device/htc/ace/spn-conf.xml:system/etc/spn-conf.xml \
     device/htc/ace/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
 PRODUCT_PACKAGES += \
