@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/ueventd.spade.rc:root/ueventd.spade.rc
 
 ## (2) Also get non-open-source GSM-specific aspects if available
-$(call inherit-product-if-exists, vendor/htc/ace/ace-vendor.mk)
+$(call inherit-product-if-exists, vendor/htc/ace/device-vendor.mk)
 
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -180,18 +180,15 @@ PRODUCT_COPY_FILES += \
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
 
-$(call inherit-product, build/target/product/full_base.mk)
-
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
-
-# media profiles and capabilities spec
-$(call inherit-product, device/htc/ace/media_a1026.mk)
 
 # htc audio settings
 $(call inherit-product, device/htc/ace/media_htcaudio.mk)
 
-$(call inherit-product-if-exists, vendor/htc/ace/ace-vendor.mk)
+$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+
+$(call inherit-product-if-exists, vendor/htc/ace/device-vendor.mk)
 
 PRODUCT_NAME := htc_ace
 PRODUCT_DEVICE := ace
