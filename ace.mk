@@ -54,6 +54,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     audio.primary.spade \
+    gralloc.spade \
     lights.spade \
     sensors.spade \
     gps.spade
