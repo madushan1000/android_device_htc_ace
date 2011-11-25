@@ -59,6 +59,12 @@ PRODUCT_PACKAGES += \
     sensors.spade \
     gps.spade
 
+# Input device calibration files
+PRODUCT_COPY_FILES += \
+    device/htc/ace/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
+    device/htc/ace/idc/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc \
+    device/htc/ace/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/ace/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
