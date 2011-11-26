@@ -38,7 +38,6 @@ $(call inherit-product, device/htc/ace/device.mk)
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_ace
 PRODUCT_DEVICE := ace
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := HTC
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_MODEL := Full AOSP on Desire HD/Inspire 4G
-
+PRODUCT_MODEL := Desire HD/Inspire 4G

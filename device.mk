@@ -31,7 +31,6 @@ $(call inherit-product-if-exists, vendor/htc/ace/device-vendor.mk)
 
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=android-htc \
     ro.com.google.locationfeatures=1 \
     ro.com.google.networklocation=1 \
     ro.com.google.gmsversion=2.3_r3 \
@@ -54,10 +53,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     audio.primary.spade \
+    gps.spade \
     gralloc.spade \
     lights.spade \
-    sensors.spade \
-    gps.spade
+    sensors.spade
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
@@ -195,8 +194,3 @@ $(call inherit-product, device/htc/ace/media_htcaudio.mk)
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/htc/ace/device-vendor.mk)
-
-PRODUCT_NAME := htc_ace
-PRODUCT_DEVICE := ace
-PRODUCT_MODEL := HTC Desire HD
-PRODUCT_MANUFACTURER := HTC
