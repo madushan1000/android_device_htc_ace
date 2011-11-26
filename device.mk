@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/ace/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
+    device/htc/ace/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
     device/htc/ace/firmware/default.acdb:system/etc/firmware/default.acdb \
     device/htc/ace/firmware/default_org.acdb:system/etc/firmware/default_org.acdb \
     device/htc/ace/firmware/vidc_720p_command_control.fw:system/etc/firmware/vidc_720p_command_control.fw \

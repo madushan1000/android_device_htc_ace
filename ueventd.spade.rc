@@ -23,3 +23,6 @@
 
 /dev/kgsl-2d0           0666    root        root
 /dev/kgsl-3d0           0666    root        root
+
+/dev/ttyHS0             0600    bluetoot    bluetoot
+/dev/ttyMSM0            0600    bluetoot    bluetoot
