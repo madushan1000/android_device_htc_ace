@@ -19,12 +19,12 @@
 
 #include <dlfcn.h>
 
-#include "ashmem.h"
+#include <cutils/ashmem.h>
 #include <cutils/log.h>
 #include <cutils/properties.h>
 
 #include <hardware/hardware.h>
-#include "gralloc.h"
+#include <hardware/gralloc.h>
 
 #include <fcntl.h>
 #include <errno.h>
@@ -124,7 +124,7 @@ static int fb_setUpdateRect(struct framebuffer_device_t* dev,
 {
     if (((w|h) <= 0) || ((l|t)<0))
         return -EINVAL;
-
+        
     fb_context_t* ctx = (fb_context_t*)dev;
     private_module_t* m = reinterpret_cast<private_module_t*>(
             dev->common.module);
