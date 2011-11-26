@@ -19,10 +19,10 @@
 /dev/pmem_audio         0660    system      audio
 
 /dev/radio_feedback     0660    radio       radio
+/dev/smd*               0640    radio       radio
 /dev/smd9               0600    system      system
 
 /dev/kgsl-2d0           0666    root        root
 /dev/kgsl-3d0           0666    root        root
 
-/dev/ttyHS0             0600    bluetoot    bluetoot
-/dev/ttyMSM0            0600    bluetoot    bluetoot
+/dev/ttyHS0             0660    bluetooth   bluetooth
