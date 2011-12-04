@@ -1,5 +1,7 @@
 $(call inherit-product, device/htc/ace/full_ace.mk)
 
+PRODUCT_RELEASE_NAME := E730
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
