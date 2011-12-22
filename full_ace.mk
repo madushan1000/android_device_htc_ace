@@ -39,5 +39,4 @@ $(call inherit-product, device/htc/ace/device.mk)
 PRODUCT_NAME := full_ace
 PRODUCT_DEVICE := ace
 PRODUCT_BRAND := HTC
-PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := Desire HD/Inspire 4G
