@@ -51,12 +51,33 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
+# Audio
 PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio_policy.spade \
     audio.primary.spade \
+    libaudioutils
+
+# Video
+PRODUCT_PACKAGES += \
+    copybit.msm7x30 \
+    gralloc.msm7x30 \
+    hwcomposer.msm7x30 \
+    libgenlock \
+    libmemalloc \
+    liboverlay \
+    libQcomUI \
+    libtilerenderer
+
+# Sensors, GPS, Lights
+PRODUCT_PACKAGES += \
     gps.spade \
-    gralloc.spade \
     lights.spade \
     sensors.spade
+
+# Misc
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
