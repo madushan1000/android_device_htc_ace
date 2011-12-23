@@ -51,11 +51,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/voicemail-conf.xml:system/etc/voicemail-conf.xml
 
-# Audio
-PRODUCT_PACKAGES += \
-    audio_policy.spade \
-    audio.primary.spade
-
 # Sensors, GPS, Lights
 PRODUCT_PACKAGES += \
     gps.spade \
