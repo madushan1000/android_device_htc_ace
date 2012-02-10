@@ -27,3 +27,5 @@
 /dev/genlock            0666    root        root
 
 /dev/ttyHS0             0660    bluetooth   bluetooth
+
+/dev/msm_camera/*       0660    system      camera
