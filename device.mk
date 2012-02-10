@@ -61,13 +61,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/htc/ace/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
     device/htc/ace/idc/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc \
-    device/htc/ace/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc
+    device/htc/ace/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
+    device/htc/ace/idc/ace-keypad.idc:system/usr/idc/ace-keypad.idc
+
+# Keychars
+PRODUCT_COPY_FILES += \
+    device/htc/ace/keychars/atmel-touchscreen.kcm:system/usr/keychars/atmel-touchscreen.kcm \
+    device/htc/ace/keychars/elan-touchscreen.kcm:system/usr/keychars/elan-touchscreen.kcm \
+    device/htc/ace/keychars/synaptics-rmi-touchscreen.kcm:system/usr/keychars/synaptics-rmi-touchscreen.kcm
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    device/htc/ace/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin \
-    device/htc/ace/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-    device/htc/ace/keychars/spade-keypad.kcm.bin:system/usr/keychars/spade-keypad.kcm.bin \
     device/htc/ace/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     device/htc/ace/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/ace/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
