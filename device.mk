@@ -163,6 +163,10 @@ PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/nam/gps.conf
 PRODUCT_COPY_FILES += \
     device/htc/ace/vold.fstab:system/etc/vold.fstab
 
+# media config xml file
+PRODUCT_COPY_FILES += \
+    device/htc/msm7x30-common/media_profiles.xml:system/etc/media_profiles.xml
+
 # Kernel modules
 #PRODUCT_COPY_FILES += \
 
