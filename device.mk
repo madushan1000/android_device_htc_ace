@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
     device/htc/ace/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
     device/htc/ace/idc/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc \
     device/htc/ace/idc/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
-    device/htc/ace/idc/ace-keypad.idc:system/usr/idc/ace-keypad.idc
+    device/htc/ace/idc/spade-keypad.idc:system/usr/idc/spade-keypad.idc
 
 # Keychars
 PRODUCT_COPY_FILES += \
