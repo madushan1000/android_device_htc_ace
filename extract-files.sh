@@ -21,29 +21,29 @@ MANUFACTURER=htc
 
 
 mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/akmd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/akmd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/akmd
-cp ../../../ANDROIDFS_DIR/system/bin/awb_camera ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/bma150_usr ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/htc_ebdlogd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/logcat2 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/lsc_camera ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/rmt_storage ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/bin/snd3254 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/etc/AudioBTID.csv ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/egl/libEGL_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libaudioalsa.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libgemini.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libgsl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libhtc_acoustic.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libhtc_ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/libmmjpeg.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-cp ../../../ANDROIDFS_DIR/system/lib/liboemcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/awb_camera ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/bma150_usr ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/htc_ebdlogd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/logcat2 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/lsc_camera ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/rmt_storage ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/bin/snd3254 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/etc/AudioBTID.csv ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/egl/libEGL_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/egl/libGLESv1_CM_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/egl/libGLESv2_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/egl/libq3dtools_adreno200.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libaudioalsa.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libgemini.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libgsl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libhtc_acoustic.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libhtc_ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libmmjpeg.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/liboemcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
