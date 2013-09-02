@@ -46,6 +46,7 @@ cp ../../../$ANDROIDFS_DIR/system/lib/libmmjpeg.so ../../../vendor/$MANUFACTURER
 cp ../../../$ANDROIDFS_DIR/system/lib/liboemcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 cp ../../../$ANDROIDFS_DIR/system/lib/libwpa_client.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 cp ../../../$ANDROIDFS_DIR/system/lib/libskia.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+cp ../../../$ANDROIDFS_DIR/system/lib/libqc-skia.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
 #
@@ -93,6 +94,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/liboemcamera.so:/system/lib/liboemcamera.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libskia.so:/system/lib/libskia.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libqc-skia.so:/system/lib/libqc-skia.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libwpa_client.so:/system/lib/libwpa_client.so
     
 EOF
