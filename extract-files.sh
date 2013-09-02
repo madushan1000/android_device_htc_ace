@@ -45,7 +45,7 @@ cp ../../../$ANDROIDFS_DIR/system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/
 cp ../../../$ANDROIDFS_DIR/system/lib/libmmjpeg.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 cp ../../../$ANDROIDFS_DIR/system/lib/liboemcamera.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 cp ../../../$ANDROIDFS_DIR/system/lib/libwpa_client.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-
+cp ../../../$ANDROIDFS_DIR/system/lib/libskia.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
 #
