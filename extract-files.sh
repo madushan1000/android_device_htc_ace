@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libskia.so:/system/lib/libskia.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libqc-skia.so:/system/lib/libqc-skia.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libwpa_client.so:/system/lib/libwpa_client.so
-  '  
+   
 EOF
 
-./setup-makefiles.sh
+./setup-makefiles.sh'
